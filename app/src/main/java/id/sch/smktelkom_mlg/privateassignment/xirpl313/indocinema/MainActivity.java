@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -78,21 +79,35 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
+        Fragment fragment = null;
+
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nowplaying) {
 
-        } else if (id == R.id.nav_slideshow) {
+            fragment = new NowFragment();
+            setTitle("Now Playing");
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.coming) {
 
-        } else if (id == R.id.nav_share) {
+            fragment = new ComingFragment();
+            setTitle("Coming Soon");
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.favorite) {
+
+            fragment = new FavFragment();
+            setTitle("Favorite");
+
+        } else if (id == R.id.popular) {
+
+            fragment = new PopulerFragment();
+            setTitle("Terpopuler");
 
         }
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, fragment).commitNow();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
