@@ -16,9 +16,6 @@ https://www.themoviedb.org/
 # Jenis Navigasi yang digunakan pada Aplikasi
 Navigation Drawer Activity
 
-# Library dari Local Database yang digunakan pada Aplikasi
-SQLite dasar
-
 # Deskripsi singkat dari aplikasi minimal 200 karakter
 Aplikasi INDOCINEMA merupakan aplikasi mengecek jadwal film yang menggunakan API dan berbasis android.
 Aplikasi ini menggunakan navigation drawer, yang berisi : 
