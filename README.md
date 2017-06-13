@@ -1,7 +1,7 @@
 # INDOCINEMA
 
 # Link File APK release dari Aplikasi
-https://drive.google.com/file/d/0B4Nbh9R1pMD2Ykt0X1pqeTFuQTA/view?usp=sharing
+https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0B4Icpu5BJasDSmpMMk9vOW9RWTA/view?usp=sharing
 
 # Identitas Siswa
 Nama lengkap    : Icha Nafisatul Khumairoh<br>
