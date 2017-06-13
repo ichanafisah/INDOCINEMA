@@ -100,10 +100,7 @@ public class MainActivity extends AppCompatActivity
             fragment = new ComingFragment();
             setTitle("Coming Soon");
 
-        } else if (id == R.id.favorite) {
 
-            fragment = new FavFragment();
-            setTitle("Favorite");
 
         } else if (id == R.id.popular) {
 
